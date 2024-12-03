@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { registerUser } from './apiService'; // Adjust the path as needed
+// import { registerUser } from './apiService'; // Adjust the path as needed
+import '../Register.css'; 
 
 const Register = () => {
     const [formData, setFormData] = useState({
@@ -18,18 +19,19 @@ const Register = () => {
         });
     };
 
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        try {
-            const response = await registerUser(formData);
-            setMessage(response.message);
-        } catch (error) {
-            setMessage(error.error);
-        }
-    };
+    // const handleSubmit = async (e) => {
+    //     e.preventDefault();
+    //     try {
+    //         const response = await registerUser(formData);
+    //         setMessage(response.message);
+    //     } catch (error) {
+    //         setMessage(error.error);
+    //     }
+    // };
 
     return (
-        <form onSubmit={handleSubmit}>
+        // <form onSubmit={handleSubmit}>
+        <form>
             <input type="text" name="username" value={formData.username} onChange={handleChange} placeholder="Username" required />
             <input type="email" name="email" value={formData.email} onChange={handleChange} placeholder="Email" required />
             <input type="password" name="password" value={formData.password} onChange={handleChange} placeholder="Password" required />

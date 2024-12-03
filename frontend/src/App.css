@@ -6,7 +6,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #e3f2fd; /* Light blue background for better aesthetics */
+  background: #ffffff; /* White background for the entire page */
   font-family: 'Arial', sans-serif;
 }
 
@@ -46,7 +46,7 @@ form button {
   width: 100%; /* Take full width of the form */
   padding: 12px;
   margin-top: 20px;
-  background: linear-gradient(135deg, #42a5f5, #1e88e5);
+  background: linear-gradient(135deg, #4a9fe4, #e79556);
   color: #ffffff;
   font-size: 18px;
   font-weight: bold;
