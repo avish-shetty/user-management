@@ -1,4 +1,6 @@
 to run:
-1- ```npm i -y```
-2- ```docker run -d -p 27017:27017 --name mongodb mongo```
-3- ```node server```
+- ```npm i -y```
+- ```docker run -d -p 27017:27017 --name mongodb mongo```
+- ```node server```
+- Frontend: cd /frontend-npm start
+
