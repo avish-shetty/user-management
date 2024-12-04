@@ -14,12 +14,9 @@ function App() {
                 <Routes>
                     <Route path="/login" element={<Login/>} />
                     <Route path="/Register" element={<Register/>} />
-
-                    {/* Add other routes here */}
                 </Routes>
             </div>
         </Router>
     );
 }
-
 export default App;
