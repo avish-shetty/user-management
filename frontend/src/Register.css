@@ -11,6 +11,16 @@
     text-align: center;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
   }
+  .status-message {
+    margin-top: 20px;
+    text-align: center;
+    color: green;
+    font-weight: bold;
+  }
+  
+  .status-message.error {
+    color: red;
+  }
   
   /* Input Fields */
   .form input {

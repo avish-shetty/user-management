@@ -46,7 +46,7 @@ form button {
   width: 100%; /* Take full width of the form */
   padding: 12px;
   margin-top: 20px;
-  background: linear-gradient(135deg, #4a9fe4, #e79556);
+  background: linear-gradient(135deg, #4a9fe4, #072b52);
   color: #ffffff;
   font-size: 18px;
   font-weight: bold;
@@ -90,4 +90,14 @@ form input::placeholder {
   form button {
     font-size: 16px;
   }
+}
+.status-message {
+  margin-top: 20px;
+  text-align: center;
+  color: rgb(5, 85, 5);
+  font-weight: bold;
+}
+
+.status-message.error {
+  color: red;
 }
