@@ -73,7 +73,7 @@ form h2 {
 
 /* Add spacing between inputs */
 form input::placeholder {
-  color: #90caf9;
+  color: #65a9e1;
   font-size: 14px;
 }
 
