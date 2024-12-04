@@ -43,4 +43,17 @@ router.get('/profile', authMiddleware, async (req, res) => {
     }
 });
 
+// Verify JWT token
+router.post('/verify-token', (req, res) => {
+    const { token } = req.body;
+    if (!token) return res.status(400).json({ error: 'No token provided' });
+
+    try {
+        const decoded = jwt.verify(token, JWT_SECRET);
+        res.json({ valid: true, decoded });
+    } catch (error) {
+        res.status(400).json({ valid: false, error: 'Invalid token' });
+    }
+});
+
 module.exports = router;
