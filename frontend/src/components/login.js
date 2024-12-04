@@ -8,7 +8,6 @@ const Login = () => {
     email: '',
     password: '',
   });
-
   const [statusMessage, setStatusMessage] = useState('');
 
   const handleChange = (e) => {

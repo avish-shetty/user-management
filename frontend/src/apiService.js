@@ -11,6 +11,5 @@ export const registerUser = async (formData) => {
     if (!response.ok) {
         throw new Error('Failed to register');
     }
-
     return response.json();
 };
