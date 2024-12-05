@@ -6,7 +6,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #e3f2fd; /* Light blue background for better aesthetics */
+  background: #ffffff; /* White background for the entire page */
   font-family: 'Arial', sans-serif;
 }
 
@@ -46,7 +46,7 @@ form button {
   width: 100%; /* Take full width of the form */
   padding: 12px;
   margin-top: 20px;
-  background: linear-gradient(135deg, #42a5f5, #1e88e5);
+  background: linear-gradient(135deg, #4a9fe4, #072b52);
   color: #ffffff;
   font-size: 18px;
   font-weight: bold;
@@ -73,7 +73,7 @@ form h2 {
 
 /* Add spacing between inputs */
 form input::placeholder {
-  color: #90caf9;
+  color: #65a9e1;
   font-size: 14px;
 }
 
@@ -90,4 +90,14 @@ form input::placeholder {
   form button {
     font-size: 16px;
   }
+}
+.status-message {
+  margin-top: 20px;
+  text-align: center;
+  color: rgb(5, 85, 5);
+  font-weight: bold;
+}
+
+.status-message.error {
+  color: red;
 }
